@@ -1,16 +1,17 @@
 .scroll-watcher{
-    height:16px;
     width:100%;
     background-color: rgb(123, 154, 255);
     z-index:1000;
     position:fixed;
     top:0;
     scale: 0 1;
-    transform-origin: left;
+    transform-origin: left; //element is created starting from the left side
     animation: scroll-watching linear;
-    animation-timeline: scroll();
+    animation-timeline: scroll(); // can be set to listen to each directions X or Y
+
 }
 
 @keyframes scroll-watching{
     to{scale: 1 1};
 }
+
